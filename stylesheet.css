@@ -1,0 +1,777 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /*font-family: Georgia, Palatino, serif;*/
+  
+  font-weight:400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /*font-size:16px;
+  line-height:1.5;*/
+  /*font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  color: #111;
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #004a99
+}
+
+a:hover {
+  color: #004a99;
+}
+
+
+/*div.shadowbox{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}*/
+
+#main {
+  /*position: absolute;*/
+
+  /*top: 340px;*/
+  /*margin: auto;
+
+  width: 1000px;
+
+  min-height: 100%;
+  */
+  /*margin:0;*/
+  float: left;
+
+}
+
+#main h1 {
+  font-size: 40px;
+  font-weight: normal;
+
+  line-height: 40px;
+
+  letter-spacing: -1px;
+}
+
+#main h2 {
+  font-size: 30px;
+}
+#main a2 {
+  font-size: 30px;
+}
+
+#main h3 {
+  font-size: 24px;
+}
+
+#main h4 {
+  font-size: 21px;
+}
+
+#main h5 {
+  font-size: 18px;
+}
+
+#main p {
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#main ul, #main ol {
+  margin: 20px;
+}
+
+#main li {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#main ul li {
+  list-style-type: square;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*main {
+
+    display: block;
+    min-height: 100vh;
+
+}*/
+
+#current-members div{
+  float:left;
+}
+
+#paper-publications div{
+  float:left;
+}
+
+blink, .blink { animation: blink 1s step-end infinite; }
+
+@keyframes blink {
+  67% { opacity: 0 }
+}
+
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.pub-img{
+  width: 200px;
+}
+
+div.gallery {
+    #border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.project-thumbnail img {
+    width: 95%;
+    border-radius: 20px;
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+ 
+  
+div.project-thumbnail2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+div.project-thumbnail3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+.responsive-thumbnail {
+    padding: 0 6px;
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    
+}
+.responsive-thumbnail2 {
+    padding: 0 6px;
+    float: left;
+    width: 100%;
+    font-size: 18px;
+}
+.responsive-thumbnail3 {
+    padding: 0 6px;
+    float: left;
+  width: 100%;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.research-img{
+    /*display: block*/
+    border-radius: 20px;
+    
+    border:1px solid ;
+    margin-right: 12px;
+    /*padding: 5px*/
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.5);}
+
+.rcorners3 {
+    /*display: block*/
+    border-radius: 20px;
+    
+    border:1px solid ;
+    margin-right: 12px;
+    /*padding: 5px*/
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.csslider1 img {
+    border-radius: 20px;
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.well i {
+  font-style: italic;
+  font-weight: bold;
+}
+
+}
+.Theses i {
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+.spectroscopy figure {
+/*  display: none !important;
+*/  border:10px solid !important;
+}
+
+
+.well {
+  width: 100%;
+  min-height: 20px;
+  padding: 19px;
+  float: left;
+  display: block;
+  margin-bottom: 40px;
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
+  .well blockquote {
+    border-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.15); }
+
+.img-rounded {
+  border-radius: 5px; }
+
+.page-content {
+  display: block;
+  padding: 30px 0;
+  flex: 1; 
+  min-height: 60vh;
+
+/*  min-height: 70%;
+  min-height: -webkit-calc(100% - 86px);
+  min-height: -moz-calc(100% - 86px);
+  min-height: calc(100% - 86px);*/
+
+}
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  /*background-color: lightgrey;*/
+  max-width: -webkit-calc(1000px - (30px * 2));
+  max-width: calc(1000px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 1000px) {
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
+ * Clearfix
+ */
+.wrapper:after, .footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+ 
+main .wrapper {
+  /*background-color: lightgrey;*/
+  max-width: -webkit-calc(1000px );
+  max-width: calc(1000px );
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 3px;
+  padding-left: 3px; 
+
+}
+
+span.clear { clear: left; display: block; }
+
+
+
+  /**/
+ /**/
+/* From here on is it all Header and Menu*/
+
+
+
+
+#logo img{
+  /*width: 860px;*/
+  /*height:98px;*/
+  width: 100%;
+  /*height: 114px;*/
+  margin-bottom: 0px;
+  display: block;
+  z-index: -1;
+}
+#logo {
+  width: 100%;
+  margin: 0px;
+  margin-top: -1px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+}
+
+
+ /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #2a6ebb;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #2a6ebb;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a7c1e3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #004a99;
+    color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #d5d6d2;
+    color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+} 
+
+
+
+
+
+
+/*end of responsive Menu*/
+
+
+
+
+
+
+header .wrapper {
+  background-color: white;
+  max-width: -webkit-calc(1100px );
+  max-width: calc(1100px );
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+  padding-bottom:0;
+  padding-right: 3px;
+  padding-left: 3px; 
+  margin-top: 0;
+  margin-bottom:0;
+
+}
+
+
+
+#header img{
+  text-align: center;
+  margin-top: 0px;
+  width: 1000px;
+  display: block;
+
+}
+
+#header {
+  width: 1000px;
+  text-align: top;
+  margin-left:   auto;
+  margin-right:  auto;
+  margin-top:    auto;
+  margin-bottom: auto;
+}
+
+
+
+
+
+/**/
+
+
+
+
+#menubar {
+  margin-top: -10px;
+  height: 60px;
+  background-color: #2a6ebb;
+  width: 1000px;
+  text-align: center;
+
+}
+
+#menubar #menu-left {
+  margin-top: 20px;
+  float:left;
+}
+@media(max-width: 800px){
+  #menu-left{
+    display: none;
+  }
+}
+
+#menubar #menu-right {
+  float:right;
+  margin-top: 20px;
+}
+
+
+#menubar ul  {
+  
+  /*padding-top: 20px;*/
+  list-style-type:  none;
+  overflow: hidden;
+  /*background-color: #2a6ebb;*/
+  left:60px;
+  
+  
+
+}
+
+/*
+#menubar .burger-toggle {
+  display: none;
+}*/
+@media(max-width: 800px) {
+  #menubar {
+  margin-top: -10px;
+  height: 60px;
+  /*background-color: #996ebb;*/
+  width: 800px;
+  text-align: center;
+  
+  }
+    #menubar ul  { 
+  /*padding-top: 20px;*/
+  list-style-type:  none;
+  overflow: hidden;
+  
+  }
+  #menubar .burger-toggle {
+  /*display: none;*/
+  }  
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.burger-toggle {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-left: 15px;
+  padding: 9px 10px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid transparent;
+  border-radius: 4px; 
+  border-color: lightblue;
+  }
+  .burger-toggle:focus {
+    outline: 0; }
+  .burger-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    border-radius: 1px; 
+    background-color: lightblue;
+  }
+
+  .burger-toggle .icon-bar + .icon-bar {
+    margin-top: 4px; }
+  @media (min-width: 800px) {
+    .burger-toggle {
+      display: none; 
+      } 
+    }
+
+
+
+
+
+#menubar li  {
+  
+  display: inline;
+  float: left;
+
+}
+#menubar li a {
+  
+  display: box;
+  /*text-align: center;*/
+  padding-left: 20px;
+  padding-right:  20px;
+
+  /*color:green;*/
+  color:white;
+}
+
+#menubar .internal-link {
+  
+  text-align: right;
+  float: right;
+  padding-left: 20px;
+  padding-right:  20px;
+  color:#c44444;
+}
+
+
+
+/*From here on its just footer */
+
+
+
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0; 
+
+}
+
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 15px; }
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0; }
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: #828282;
+  margin-left: -15px; }
+
+.footer-col {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px; }
+
+  ul.funding {
+  float: none;
+  list-style-type:  none;
+  }
+  ul.funding img {
+  width: 150px;
+  }
+
+  ul.footer-logos {
+  float: right;
+  list-style-type:  none;
+  overflow: hidden;
+
+  }
+  ul.footer-logos > li {
+  display: inline-block;
+  margin: 10px
+  }
+
+  .footer-logos img {
+  width: 130px;
+  }
+
+.footer-col-1 {
+  width: -webkit-calc(35% - (30px / 2));
+  width: calc(35% - (30px / 2)); }
+
+.footer-col-2 {
+  width: -webkit-calc(20% - (30px / 2));
+  width: calc(20% - (30px / 2)); }
+
+.footer-col-3 {
+  width: -webkit-calc(65% - (30px / 2));
+  width: calc(65% - (30px / 2)); }
+
+@media screen and (max-width: 800px) {
+  .footer-col-1,
+/*  .footer-col-2 {
+    width: -webkit-calc(50% - (30px / 2));
+    width: calc(50% - (30px / 2)); }
+*/
+  .footer-col-3 {
+    width: -webkit-calc(100% - (30px / 2));
+    width: calc(100% - (30px / 2)); } }
+@media screen and (max-width: 600px) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (30px / 2));
+    width: calc(100% - (30px / 2)); } }
+

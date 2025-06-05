@@ -1,0 +1,56 @@
+---
+title: "Clustertreffen 2022 - Registration"
+---
+
+<!-- Alles was den eigentlichen Inhalt betrift.-->
+<div id="content">
+<?php
+
+
+$vorname=$_POST['vorname'];
+$nachname=$_POST['nachname'];
+$email=$_POST['email'];
+$arrival=$_POST['arrival'];
+$departure=$_POST['departure'];
+$arrivalTime=$_POST['arrivalTime'];
+$external=$_POST['external'];
+$bus=$_POST['bus'];
+$email=$_POST['email'];
+
+
+$to="clustertreffen@physik.uni-freiburg.de,clustertreffen2022@physik.uni-freiburg.de";
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+$message = $vorname . " " . $nachname . "\r\n<br>";
+$message .= $email . "\r\n<br>";
+$message .= "arr " . $arrival . "\r\n<br>";
+$message .= "dep ". $departure . "\r\n<br>";
+$message .= "ext ". $external . "\r\n<br>";
+$message .= "bus " .$bus . "\r\n<br>";
+$message .= "aTime " .$arrivalTime . "\r\n<br>";
+
+
+$b=$bus!="on" ? "no bus": "bus transport";
+$e=$external=="on" ? "external accomodation, ": "";
+
+$res=mail($to,"registration ".$nachname,$message,$headers);
+$suc=($res and !empty($nachname));
+if ($suc){
+  
+  //$r=$res ? 'true' : 'false';
+  print "<h2> Registration successful</h2>";
+  print "<p>Thanks $vorname $nachname. We saved the following details: email $email, arrival $arrival, departure $departure,$e $b, arrival time $arrivalTime</p>";
+  print "<br/>";
+}else{
+  print "<h2> Registration failed</h2>";
+  print "<p>Empty name or invalid email</p>";
+  print "<br/>";
+}
+
+
+
+
+?>
+
+<p style="padding-left:15px"><a href="../index.html"> Back to main page</a></p>
+</div>

@@ -1,0 +1,90 @@
+---
+title: "Clustertreffen 2022 - Registration"
+---
+
+<!-- Alles was den eigentlichen Inhalt betrift.-->
+<div id="content">
+       <h1>Registration</h1>
+       
+       <br>
+       <div>
+              The deadline for registration and abstract submission is: <span style="color:red; font-weight: bold; font-size: 20px;"> <b><big>23.9.2022</big></b><br> </span>
+       </div>
+       <br>
+
+ <div style="float:center">
+ <form method="post" action="/Clustertreffen2022/Clustertreffen2022_registration_php/index.php" onsubmit="return Check_Form()" accept-charset="utf-8" > 
+     <fieldset id="registration"style="text-align:center">
+        <legend>Registration
+        </legend>	
+		<div class="form-group">
+			<input class="form-control" type="text" name="vorname" placeholder="First name" required/>
+		</div>
+		<div class="form-group">
+			<input class="form-control" type="text" name="nachname" placeholder="Last name" required/>
+		</div>
+		<div class="form-group">
+			<input class="form-control" type="email" name="email" placeholder="Email address" required/>
+		</div>
+		<div class="form-group">
+			<label for="arrival">Arrival</label>  
+			<input class="form-control" type="date" name="arrival" value="2022-10-02" min="2022-10-02" max="2022-10-06" required/>
+		</div>
+		<div class="form-group">
+			<label for="departure">Departure</label>  
+			<input class="form-control" type="date" name="departure" value="2022-10-07" min="2022-10-03" max="2022-10-07" required/>
+		</div>
+		<div class="form-group">
+			<label for="external">External accomodation</label>  
+			<input class="form-control" type="checkbox" name="external"/>
+		</div>
+		<div class="form-group">
+			<label for="bus">Bus transport station B&auml;rental to Herzogenhorn
+			<input class="form-control" type="checkbox" name="bus"/>
+		</div>	
+		<div class="form-group">
+			<label for="arrivalTime">Expected arrival time</label>  
+			<input class="form-control" type="time" name="arrivalTime"/>
+		</div>     
+		<div class="form-group">
+			<input class="btn btn-primary" type="submit" name="button_registr" value="Submit" />
+		</div>       
+    </fieldset>   
+     
+</form>
+</div>
+
+<br><br><br>
+
+<div style="float:center; width: 500px;">
+	A "book-of-abstracts" will be published. <br>
+	For your abstract please use either <a href="../documents/clustertreffen2022_abstract.tex">this LaTeX template (.tex)</a> or the <a href="../documents/clustertreffen2022_abstract.docx">Microsoft Word template (.docx) </a> without changing the layout. Then upload the abstract in the following box as a pdf with less than 2MB file size.<br>
+	If you really need a bigger file, please send it directly to <a href="mailto:clustertreffen@physik.uni-freiburg.de">clustertreffen@physik.uni-freiburg.de</a>
+</div>
+
+<br><br><br>
+ <div style="float:center">
+	<form enctype="multipart/form-data" method="POST" action="/Clustertreffen2022/Clustertreffen2022_abstract_php/index.php" accept-charset="utf-8">
+		<fieldset id="abstract"style="text-align:center">
+        <legend>Abstract
+        </legend>	
+		<div class="form-group">
+			<input class="form-control" type="text" name="sender_name" placeholder="Your Name" required/>
+		</div>
+		<div class="form-group">
+			<input class="form-control" type="email" name="sender_email" placeholder="Email address" required/>
+		</div>
+		<div class="form-group">
+			<label for="file">Max size 2MB</label>  
+			<input class="form-control" type="file" name="file" placeholder="Abstract" accept=".pdf" required/>
+		</div>
+		<div class="form-group">
+			<input class="btn btn-primary" type="submit" name="button_abstr" value="Submit" />
+		</div>           
+	</form>
+
+
+</div>
+
+
+</div>

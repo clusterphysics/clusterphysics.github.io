@@ -1,0 +1,84 @@
+---
+title: "Clustertreffen 2022 - Registration"
+---
+
+<!-- Alles was den eigentlichen Inhalt betrift.-->
+<div id="content">
+<?php
+$suc=true;
+if(isset($_POST['button_abstr']))
+{
+	if (isset($_FILES['file'])){
+    $tmp_name = $_FILES['file']['tmp_name']; // get the temporary file name of the file on the server
+    $name     = $_FILES['file']['name']; // get the name of the file
+    $size     = $_FILES['file']['size']; // get size of the file for size validation
+    $type     = $_FILES['file']['type']; // get type of the file
+    $error     = $_FILES['file']['error']; // get the error (if any)
+    //~ print "$tmp_name $name $size $type ";
+    if (strpos($type,"pdf")===false){
+		$suc=false;
+		//~ print "wrong type";
+	}
+    if($error > 0)
+    {
+		$suc=false;
+		//~ print "$error";
+    }else{
+ 
+    //read from the uploaded file & base64_encode content
+    //~ $handle = fopen($tmp_name, "r"); // set the file handle only for reading the file
+    //~ $content = fread($handle, $size); // reading the file
+    //~ fclose($handle);                 // close upon completion
+ 
+    //~ $encoded_content = chunk_split(base64_encode($content));
+    //~ $boundary = md5("random"); // define boundary with a md5 hashed value
+    
+    //~ $to="lukas.weise@physik.uni-freiburg.de";
+
+	//~ $message = $_POST['sender_name'] . "\r\n<br>";
+	//~ $message .= $_POST['sender_email'] . "\r\n<br>";
+	//~ //plain text
+	//~ $body = "--$boundary\r\n";
+	//~ $body .= "Content-Type: text/plain; charset=utf-8\r\n";
+	//~ $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
+	//~ $body .= chunk_split(base64_encode($message));
+			 
+	//attachment
+	//~ $body .= "--$boundary\r\n";
+	//~ $body .="Content-Type: $type; name=".$name."\r\n";
+	//~ $body .="Content-Disposition: attachment; filename=".$name."\r\n";
+	//~ $body .="Content-Transfer-Encoding: base64\r\n";
+	//~ $body .="X-Attachment-Id: ".rand(1000, 99999)."\r\n\r\n";
+	//~ $body .= $encoded_content; // Attaching the encoded file with email
+    }
+    
+	}else{
+		$suc=false;
+		print "no file";
+	}
+	if ($suc){
+	  $type=pathinfo($name)['extension'];
+	  //~ $res=mail($to,"abstract ".$nachname,$body,$headers);
+	  $filename="../../../wsphyscl/abstracts/".$_POST['sender_name'].".".$type  ;  
+	  $cnt=0;
+	  while 	  (file_exists($filename)){
+		  $cnt++;
+		  $filename="../../../wsphyscl/abstracts/".$_POST['sender_name']."_".strval($cnt).".".$type ;   
+		}
+	  $res=move_uploaded_file($tmp_name,$filename);
+	  $bname=pathinfo($filename)['basename'];
+	  if ($res){
+	  print "<h2> Abstract upload successful </h2>";
+	  print "$name saved as $bname";
+	  }else{
+	  print "<h2> Abstract upload failed</h2>";
+	  }
+	}else{
+	  print "<h2> Abstract upload failed</h2>";
+	}
+} 
+  
+?>
+
+<p style="padding-left:15px"><a href="../index.html"> Back to main page</a></p>
+</div>

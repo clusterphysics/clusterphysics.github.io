@@ -1,0 +1,87 @@
+---
+title: "Instrumentation"
+---
+
+<p id="mobile-source">
+
+	<h1>Mobile Source</h1>
+
+	<h5>Researching student: *hiring*</h5>
+	<h5>Most recent publications: <i><a href="https://doi.org/10.6094/UNIFR/175263">Time-resolved imaging of laser-induced phase transitions in free silver nanoclusters</a></i></h5>
+
+
+	<h2>Introduction</h2>
+	<p>
+		Control of nanoscale matter proved promising in a vast range of applications, be it medical purposes such as cancer therapy, chemical analysis and catalysis, or nonlinear optical processes (see e.g. [1]). Recently it has been shown feasible to image the 3D structure of single metal nanoparticles in a diffraction-before-destruction setup at the free electron laser FLASH in Hamburg [2]. Extending this technique into a pump-probe probe experiment will yield insight into the behavior of nanoparticles at sub-nanosecond timescale. Using an IR laser to start interesting behavior and a probe X-Ray pulse to obtain a diffraction image of the state of the cluster at a given time. In this way we will obtain "flicker-book movies" of melting clusters. Such yield insights into the electron dynamics of the cluster at extreme conditions.
+		<figure>
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/experiment.png" width=600px style="float: center" />
+			<figcaption>Schematic depiction of the planned pump-probe setup. IR/VIS pump and X-Ray probe are crossed with a cluster beam and a zero-order diffraction image is recorded on a pixel detector.</figcaption>
+			<span class="clear"></span>
+		</figure>
+		<figure>
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/Quelle_explained5_1.png" width=1000px style="float: center" />
+			<figcaption>Gas aggregation source design. To maximize cluster density in the cluster-beam produced by it, an aerodynamic lens system was introduced (red frame).</figcaption>
+			<span class="clear"></span>
+		</figure>
+	</p>
+ 
+	<h2>Challenges</h2>
+	<p>
+		Due to the low scattering cross sections of nanoclusters, high photon fluxes are necessary. At FLASH, a beam waist as narrow as 10 microns is possible. With a cluster beam of one millimeter in diameter, the interaction volume resembles a cylinder of 10<sup>−13</sup> cubic meters. To have a single particle in this volume about every 10 shots (X-Ray pulses are short enough (fs) that movement of the clusters can be neglected), the density needs to be in the order of 10<sup>12</sup> clusters per cubic meter or 10<sup>6</sup> cm<sup>-3</sup>. Assuming single-charged clusters, this amounts to a cluster current of 0.3 A (given a realistic cluster velocity of 150m/s and 4mm diameter of the clusterbeam). A further constraint for such experiments pertains to the size of the nanoclusters. Because the scattering cross section decreases with higher photon energy, larger clusters are preferable. Their special features are larger and thus better resolved with lower energy photons. At FLASH, photon energies of up to 310eV are achievable. Due to this limitation, structures smaller than a few nanometers can not be resolved. We aim to produce clusters larger than 30nm, preferably 90nm as here feasibility has been shown [2].
+	</p>
+
+	<h2>Current Work</h2>
+	<p>
+		Precise control of size in the synthesis of various nanoparticles is well established. Large clusters from gas aggregation sources have been observed, however, their formation mechanism is not well understood. Great progress towards the production of large clusters has been made, however generation of clusters larger that 20nm in diameter remains difficult.
+	</p>
+
+	<h2>Microscopy</h2>
+	<p>
+		To verify the results above, clusters have been deposited on silicon substrates and TEM grids.
+		<figure>
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/shuttercrop.png" width=400px style="float: left" />
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/sample2.jpg" width=300px style="float: right" />
+			<figcaption>(Left) re-purposed HDD-shutter. (Right) Glass sample and TEM-grid on sample holder</figcaption>
+			<span class="clear"></span>
+		</figure>
+		Because the beam-cluster density is very high, deposition times need to be short, ensuring that clusters on the sample remain singled out. A shutter was build from an old PC hard drive to reliably control deposition times (60ms). These samples have been examined through atomic force microscopy (AFM) and transmission electron microscopy (TEM). Particle sizes obtained in this way are compared with those obtained through electrostatic deflection.
+		<figure>
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/sample48.png" width=300px style="float: left" />
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/sample48_spec.png" width=400px style="float: right" />
+			<figcaption>AFM images provide height profiles of clusters on a silicon surface. Particles are detected by a watershed algorithm and are turned into a height distribution (blue) which is compared to the corresponding abundance spectrum (green). [3]</figcaption>
+			<span class="clear"></span>
+		</figure>
+		<figure>
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/TEM_18_04.jpg" width=200px style="float: left" />
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/grid_1G_05.jpg" width=200px style="float: right" />
+			<figcaption>TEM images also show particles no larger than ∼ 20nm, confirming previous observations.</figcaption>
+			<span class="clear"></span>
+		</figure>
+	</p>
+
+	<h2>Mie scattering</h2>
+	<p>
+		To optimize source parameters for large clusters in real-time, a detector exploiting Mie scattering has been devised. As clusters approach sizes larger than 20nm, scattering of in-plane polarized 405nm laser-light at 90° with respect to the incoming laser light drastically increases. This, in principle, allows us to detect even small amounts of large clusters in the cluster beam in real-time.
+		<figure>
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/SCATDET.jpg" width=400px style="float: left" />
+			<img id="research-img" src="/imgs/instrumentation/Mobile-Source/scatDetReal.jpg" width=300px style="float: right" />
+			<figcaption>(left) Cutaway rendering with 405nm laserbeam (blue) scattered off the cluster-beam (yellow) through a microscope towards a photo-multiplier tube. (right) Photo of the actual detector.</figcaption>
+			<span class="clear"></span>
+		</figure>
+		As of now, photo-multiplier (PMT) currents of up to several &mu;A have	been measured at 0.3&mu;A background. Statistical analysis of the PMT signal, independent of polarization, has not revealed any signatures of larger clusters yet. Next steps are improving the signal-to-noise ratio such that filtering the scattered light for in-plane polarization becomes possible.
+	</p>
+
+	<h2>Forthcoming Research</h2>
+	<p>
+		<ul>
+			<li>Real-time detection of large clusters exploiting Mie scattering to deepen our understanding of the conditions leading to large clusters.</li>
+			<li>Time-resolved pump-probe on metal clusters.</li>
+		</ul>
+	</p>
+
+	<ol>
+		<li>Vincenzo Amendola, Roberto Pilot, Marco Frasconi, Onofrio M Maragò, Maria Antonia Iatì <i>Surface plasmon resonance in gold nanoparticles: a review</i> <a href="https://doi.org/10.1088/1361-648X/aa60f3">J Phys Condens Matter. 2017 May 24;29(20):203002</a></li>
+		<li>Ingo Barke, Hannes Hartmann, Daniela Rupp, Leonie Flückiger, Mario Sauppe, Marcus Adolph, Sebastian Schorb, Christoph Bostedt, Rolf Treusch, Christian Peltz, Stephan Bartling, Thomas Fennel, Karl-Heinz Meiwes-Broer & Thomas Möller <i>The 3D-architecture of individual free silver nanoparticles captured by X-ray scattering</i> <a href="https://doi.org/10.1038/ncomms7187">Nature Communications volume 6, Article number: 6187 (2015)</a></li>
+		<li>Samuel Kellerer. Charakterisierung einer Magnetron-Clusterquelle durch Clusterdeposition, 2017.</li>
+	</ol>
+</p>
